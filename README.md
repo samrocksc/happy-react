@@ -15,6 +15,7 @@ npm start
 * You can also do sass loaders inside of common.
 * Folders in `/src` that are going to be Containers that hold a container and their components.  The container should be the only piece of the view that touches the store.
 * `/src/constants` is the location of all of the action names, so you can easily import and create new reducers quickly.
+* Redux Devtools built in![Redux Devtools Chrome Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 
 ## FAQ
 

@@ -21,8 +21,7 @@ import auth from './Login/loginReducer';
 import common from './common/commonReducer';
 
 // Routing Pages
-import LoginContainer from './Login/LoginContainer';
-import Splash from './common/SplashPage';
+import SplashContainer from './common/SplashContainer';
 
 const reducer = combineReducers({
   auth,
@@ -60,7 +59,7 @@ ReactDOM.render(
     <div>
       <Provider store={store}>
         <Router history={history}>
-          <Route path="/" component={Splash} />
+          <Route path="/" component={SplashContainer} />
         </Router>
       </Provider>
     </div>

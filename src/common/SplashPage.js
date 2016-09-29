@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Container } from 'stardust';
 
 export default class SplashPage extends Component {
+  static propTypes = {
+    common: PropTypes.object,
+  }
   render() {
+    const { common } = this.props;
     return (
       <Container>
-        <h1>Welcome to A New React App</h1>
+        <h1>{ common.greeting }</h1>
       </Container>
-  );
+    );
   }
 }
 
