@@ -1,5 +1,5 @@
 import {
-  COMMON_CHANGE_GREETING
+  COMMON_CHANGE_GREETING,
 } from '../constants';
 
 const initialState = {

@@ -1,5 +1,13 @@
 # happy-react
-An easy react boiler-plate that should transcend most popular conventions.
+A super easy way to scaffold a react app quickly with low barrier to entry.
+
+```
+git clone git@github.com:samrocksc/happy-react.git
+cd happy-react
+npm i
+npm start
+```
+
 
 * Any component filename is going to be camelCased with the first letter uppercase.
 * `/src/index.js` is a single file setup.  Try to keep this to as few files as possible to prevent confusion during onboarding new developers.
@@ -11,7 +19,7 @@ An easy react boiler-plate that should transcend most popular conventions.
 ## FAQ
 
 **Why did you make this**
-Honestly....I'm not very good at counting the backslashes needed whenever I'm working on big projects so I wanted a system that would never go more than 3 folders deep to connect an element.
+Honestly....I kept using boilerplate, and it was screwing me over because it had opinionated config files.  I wanted two things: short file depth(forget `../../.../` hell), and a single file config page I could watch the flow of my app be built in.
 
 **Why do you use two frontend libraries?**
 I use two frontend libraries because Stardust gives me a grid system that is easy to work with as well as a bootstrappy UI, and because Material-UI gives me the material design ability on the fly.  In a lot of projects now designers for some reason have decided that the two methodologies are superfluous.  This methodology allows me to cover all my frontend bases.
