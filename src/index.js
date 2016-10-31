@@ -1,5 +1,4 @@
 // Configure Material-UI
-import { deepOrange500 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -8,7 +7,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import { routerMiddleware, syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 // Configure Store
@@ -22,6 +21,9 @@ import common from './common/commonReducer';
 
 // Routing Pages
 import SplashContainer from './common/SplashContainer';
+
+// CSS
+import { theme } from './theme';
 
 const reducer = combineReducers({
   auth,
@@ -41,13 +43,7 @@ const store = createStore(
 );
 
 // Material-UI theme
-const muiTheme = getMuiTheme({
-  fontFamily: 'Roboto, sans-serif',
-  palette: {
-    primary1Color: '#293171',
-    accent1Color: deepOrange500,
-  },
-});
+const muiTheme = getMuiTheme(theme);
 
 // Seet up history
 const history = syncHistoryWithStore(browserHistory, store);
