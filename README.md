@@ -8,7 +8,6 @@ npm i
 npm start
 ```
 
-
 * Any component filename is going to be camelCased with the first letter uppercase.
 * `/src/index.js` is a single file setup.  Try to keep this to as few files as possible to prevent confusion during onboarding new developers.
 * `/src/Common` is a base file for anything that's generic to the project.  CSS etc.
